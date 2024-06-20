@@ -14,10 +14,9 @@ export class UserService {
       return this.httpClient.post(`${baserUrl}/usuarios/`,user);
     }
 
-    public updateUser(formData: any) {                                              //agregado
-      const token = localStorage.getItem('token');                                  //agregado
-      const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);    //agregado
-      return this.httpClient.put(`${baserUrl}/usuario/`, formData, { headers });    //agregado
-    }                                                                               //agregado
-
+    public updateUser(formData: any) {                                          //BLOQUE
+      const token = localStorage.getItem('token');
+      const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
+      return this.httpClient.put(`${baserUrl}/usuarios/${formData.id}`, formData, { headers });
+    }
 }
