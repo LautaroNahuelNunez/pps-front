@@ -1,4 +1,4 @@
-import { CategoriaService } from './../../../services/categoria.service';
+/* import { CategoriaService } from './../../../services/categoria.service';
 import { Component, OnInit } from '@angular/core';
 import Swal from 'sweetalert2';
 
@@ -58,12 +58,12 @@ export class ViewCategoriasComponent implements OnInit {
       }
     });
   }
-}
+} */
 
 
 
 
-/* import Swal from 'sweetalert2';
+import Swal from 'sweetalert2';
 import { CategoriaService } from './../../../services/categoria.service';
 import { Component, OnInit } from '@angular/core';
 
@@ -114,5 +114,5 @@ export class ViewCategoriasComponent implements OnInit {
       }
     });
   }
-} */
+}
 
