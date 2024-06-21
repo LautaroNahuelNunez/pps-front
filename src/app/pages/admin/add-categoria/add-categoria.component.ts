@@ -23,7 +23,7 @@ export class AddCategoriaComponent implements OnInit {
 
   formSubmit(){
     if(this.categoria.titulo.trim() == '' || this.categoria.titulo == null){
-      this.snack.open("El título es requerido !!",'',{
+      this.snack.open("Complete los campos requeridos!",'',{
         duration:3000
       })
       return ;

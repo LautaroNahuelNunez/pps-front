@@ -3,7 +3,28 @@
     <div mat-subheader>
       Todas las categorías
     </div>
-    <mat-list-item *ngFor = "let c of categorias">
+    <mat-list-item *ngFor="let c of categorias">
+      <mat-icon mat-list-icon>category</mat-icon>
+      <div mat-line>{{ c.titulo }}</div>
+      <div mat-line>{{ c.descripcion }}</div>
+      <button mat-flat-button color="warn" class="ml10" (click)="eliminarCategoria(c.categoriaId)">Eliminar</button>
+      <mat-divider></mat-divider>
+    </mat-list-item>
+  </mat-list>
+
+  <div class="container text-center mt20">
+    <button routerLink="/admin/add-categoria" mat-raised-button color="primary">Agregar categoría</button>
+  </div>
+</mat-card>
+
+
+
+<!-- <mat-card>
+  <mat-list>
+    <div mat-subheader>
+      Todas las categorías
+    </div>
+    <mat-list-item *ngFor="let c of categorias">
       <mat-icon mat-list-icon>category</mat-icon>
       <div mat-line>{{ c.titulo }}</div>
       <div mat-line>{{ c.descripcion }}</div>
@@ -14,4 +35,5 @@
   <div class="container text-center mt20">
     <button routerLink="/admin/add-categoria" mat-raised-button color="primary">Agregar categoría</button>
   </div>
-</mat-card>
+</mat-card> -->
+
